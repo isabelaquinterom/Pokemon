@@ -4,6 +4,12 @@
  */
 package autonoma.PolimorfismoPokemon.negocio;
 
+import autonoma.PolimorfismoPokemon.models.Bulbasaur;
+import autonoma.PolimorfismoPokemon.models.Charmander;
+import autonoma.PolimorfismoPokemon.models.Pikachu;
+import autonoma.PolimorfismoPokemon.models.Pokemon;
+import autonoma.PolimorfismoPokemon.models.Squirtle;
+
 /**
  *
  * @author Asus

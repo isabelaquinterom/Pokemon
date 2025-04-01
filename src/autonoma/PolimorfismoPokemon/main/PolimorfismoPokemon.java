@@ -4,12 +4,18 @@
  */
 package autonoma.PolimorfismoPokemon.main;
 
+import autonoma.PolimorfismoPokemon.models.Bulbasaur;
+import autonoma.PolimorfismoPokemon.models.Charmander;
+import autonoma.PolimorfismoPokemon.models.Pikachu;
+import autonoma.PolimorfismoPokemon.models.Squirtle;
+import autonoma.PolimorfismoPokemon.negocio.PokemonService;
+
 /**
  *
  * @author Asus
  */
 public class PolimorfismoPokemon  {
-    public static void PolimosrfimoPokemon(String[]args){
+    public static void main (String[]args){
         // Crear instancia del servicio
         PokemonService pokemonService = new PokemonService();
         
@@ -19,19 +25,19 @@ public class PolimorfismoPokemon  {
         Bulbasaur bulbasaur = pokemonService.crearBulbasaur();
         Squirtle squirtle = pokemonService.crearSquirtle();
         
-        System.out.println("=== Demostración de ataques de Pikachu ===");
+        System.out.println("=== Demostracion de ataques de Pikachu ===");
         pokemonService.realizarAtaqueGenerico(pikachu);
         pokemonService.realizarAtaquesElectricos(pikachu);
         
-        System.out.println("\n=== Demostración de ataques de Charmander ===");
+        System.out.println("\n=== Demostracion de ataques de Charmander ===");
         pokemonService.realizarAtaqueGenerico(charmander);
         pokemonService.realizarAtaquesFuego(charmander);
         
-        System.out.println("\n=== Demostración de ataques de Bulbasaur ===");
+        System.out.println("\n=== Demostracion de ataques de Bulbasaur ===");
         pokemonService.realizarAtaqueGenerico(bulbasaur);
         pokemonService.realizarAtaquesPlanta(bulbasaur);
         
-        System.out.println("\n=== Demostración de ataques de Squirtle ===");
+        System.out.println("\n=== Demostracion de ataques de Squirtle ===");
         pokemonService.realizarAtaqueGenerico(squirtle);
         pokemonService.realizarAtaquesAgua(squirtle);
     }
